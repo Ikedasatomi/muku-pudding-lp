@@ -330,11 +330,11 @@ button {
 
 .hero__cta {
   position: absolute;
-  bottom: 2.35%;
+  bottom: 1.5%;
   left: 15.4%;
   display: flex;
   width: 69.2%;
-  min-height: 7.2cqw;
+  min-height: clamp(52px, 8.4cqw, 80px);
   align-items: center;
   justify-content: center;
   border: 0.25cqw solid #c89442;
@@ -2048,6 +2048,10 @@ button {
     min-height: auto;
   }
 
+  .hero__features {
+    top: 77.4%;
+  }
+
   .hero__lead,
   .hero__side-copy {
     font-size: max(3.1cqw, 12px);
@@ -2105,4 +2109,36 @@ button {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
   }
+}
+
+/* FV以降は同じシルク背景を連続させ、セクション境界をなじませる */
+#main-content {
+  background-color: #ead8c1;
+  background-image: url("../images/silk-background.webp");
+  background-position: center top;
+  background-size: min(100%, 941px) 100%;
+  background-repeat: no-repeat;
+}
+
+.gift-story,
+.ingredients,
+.lineup,
+.gift-service,
+.voices,
+.faq,
+.closing-cta,
+.final-closing {
+  background: transparent;
+}
+
+.gift-story__inner,
+.ingredients__inner,
+.lineup__inner,
+.gift-service__inner,
+.voices__inner,
+.faq__inner,
+.closing-cta__inner,
+.final-closing__inner {
+  background: transparent;
+  box-shadow: -28px 0 55px rgb(77 45 20 / 9%), 28px 0 55px rgb(77 45 20 / 9%);
 }
