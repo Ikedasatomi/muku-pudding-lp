@@ -2110,35 +2110,3 @@ button {
     animation-iteration-count: 1 !important;
   }
 }
-
-/* FV以降は同じシルク背景を連続させ、セクション境界をなじませる */
-#main-content {
-  background-color: #ead8c1;
-  background-image: url("../images/silk-background.webp");
-  background-position: center top;
-  background-size: min(100%, 941px) 100%;
-  background-repeat: no-repeat;
-}
-
-.gift-story,
-.ingredients,
-.lineup,
-.gift-service,
-.voices,
-.faq,
-.closing-cta,
-.final-closing {
-  background: transparent;
-}
-
-.gift-story__inner,
-.ingredients__inner,
-.lineup__inner,
-.gift-service__inner,
-.voices__inner,
-.faq__inner,
-.closing-cta__inner,
-.final-closing__inner {
-  background: transparent;
-  box-shadow: -28px 0 55px rgb(77 45 20 / 9%), 28px 0 55px rgb(77 45 20 / 9%);
-}
